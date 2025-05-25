@@ -19,8 +19,8 @@ session=Session()
 
 #creating sample companies
 
-melldee=Company(name='Melldee', founding_year=2019)
-toogood=Company(name='TooGood', founding_year=2010)
+company1=Company(name='Melldee', founding_year=2019)
+company2=Company(name='TooGood', founding_year=2010)
 
 #this adds the created companies above to the Session so that they are added to the database
 
@@ -28,8 +28,8 @@ session.add_all([company1, company2])
 
 #sample of devs
 
-ruth= Dev(name='Ruth')
-ken = Dev(name='Ken')
+dev1= Dev(name='Ruth')
+dev2= Dev(name='Ken')
 
 session.commit() #commiting so that ids for both companies and dev get assigned in the database
 
